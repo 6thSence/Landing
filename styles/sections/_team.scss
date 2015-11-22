@@ -1,4 +1,4 @@
 .team {
-  @include block(url('../img/background/5.png'));
-  height: 50vh;
+  @include block(#f4f4f4);
+  height: 80vmin;
 }

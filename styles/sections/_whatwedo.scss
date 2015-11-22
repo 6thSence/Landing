@@ -1,3 +1,4 @@
 .whatwedo {
-  @include block(url('../img/background/2.png'))
+  @include block(url('../img/background/2.png') left bottom);
+  height: 111vmin;
 }

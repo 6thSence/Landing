@@ -692,58 +692,73 @@ footer {
 /* --------- sections --------- */
 .header {
   overflow: hidden;
-  height: 100vh;
+  height: 100vmin;
   width: 100%;
-  background: url("../img/background/1.png");
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  background: url("../img/background/1.png") right center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .whatwedo {
   overflow: hidden;
-  height: 100vh;
+  height: 100vmin;
   width: 100%;
-  background: url("../img/background/2.png");
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  background: url("../img/background/2.png") left bottom no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 111vmin;
 }
 
 .projects {
   overflow: hidden;
-  height: 100vh;
+  height: 100vmin;
   width: 100%;
-  background: url("../img/background/3.png");
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  background: #f9f9f9 no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 136vmin;
 }
 
 .howwedo {
   overflow: hidden;
-  height: 100vh;
+  height: 100vmin;
   width: 100%;
-  background: url("../img/background/4.png");
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  background: url("../img/background/4.png") right center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 162vmin;
 }
 
 .team {
   overflow: hidden;
-  height: 100vh;
+  height: 100vmin;
   width: 100%;
-  background: url("../img/background/5.png");
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 50vh;
+  background: #f4f4f4 no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 80vmin;
 }
 
 .footerland {
   overflow: hidden;
-  height: 100vh;
+  height: 100vmin;
   width: 100%;
-  background: url("../img/background/6.png");
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 50vh;
+  background: url("../img/background/6.png") center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 123vmin;
 }
 
 /* --------- media queries --------- */

@@ -108,8 +108,12 @@
 
 @mixin block($color) {
   overflow: hidden;
-  height: 100vh;
+  height: 100vmin;
   width: 100%;
-  background: $color;
-  @include box-sizing;
+  background: $color no-repeat;
+  //@include box-sizing;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

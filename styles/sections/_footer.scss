@@ -1,4 +1,4 @@
 .footerland {
-  @include block(url('../img/background/6.png'));
-  height: 50vh;
+  @include block(url('../img/background/6.png') center center);
+  height: 123vmin;
 }
