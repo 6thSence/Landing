@@ -1,4 +1,115 @@
 .whatwedo {
   @include block(url('../img/background/2.png') left bottom);
-  height: 111vmin;
+  height: 100vmin;
+  &__content,&__blocks{
+    width: 100%;
+    @include box-sizing;
+    //opacity: 0.5;
+  }
+  &__content {
+    padding-top: 8vmin;
+    height: 33vmin;
+    //background: #fd3427;
+    .whatwedo__title {
+      font-family: proxima_nova_excn_ltsemibold;
+      color: #555555;
+      font-size: 5.4vmin;
+    }
+    .whatwedo__text {
+      font-family: proxima_nova_excn_ltlight;
+      font-size: 2.5vmin;
+      margin-bottom: 1vmin;
+      width: 25vw;
+    }
+  }
+  &__blocks {
+    position: relative;
+    height: 57vmin;
+    //background: #009900;
+    .blocks__1,.blocks__2,.blocks__3 {
+      width: 23vw;
+      height: 100%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 5vmin 5vw;
+      @include box-sizing;
+      .icon {
+        width: 100%;
+        height: 9vmin;
+        //@include background-size (3vw);
+      }
+    }
+    .blocks__title{
+      font-family: proxima_nova_excn_ltlight;
+      color: #474747;
+      font-size: 2.3vmin;
+      margin-bottom: 6vmin;
+    }
+    .blocks__list{
+      margin-bottom: 0.2vmin ;
+    }
+    .link{
+      display: block;
+      //margin-left: 10vw ;
+      height: 4vmin;
+      width: 9vw ;
+      margin: 3vmin auto;
+
+    }
+    .button {
+      width: 9vw ;
+      @include box-sizing;
+      font-family: proxima_nova_excn_ltlight;
+      font-size: 2.5vmin;
+      height: 4vmin;
+      text-align: center;
+      padding-top: 0.3vmin;
+      @include border-radius(20px);
+      padding-left: 1.4vw ;
+      padding-right: 1.4vw;
+      cursor: pointer;
+      color: #ffffff;
+      background: #e8ce4d;
+      opacity: 1;
+      &:hover {
+        @include transition(1s );
+        opacity: 0.7;
+      }
+    }
+    .blocks__item {
+      font-family: proxima_nova_excn_rgregular;
+      color: #474747;
+      font-size: 2.2vmin;
+      margin-bottom: 0.5vmin;
+    }
+
+    .blocks__1 {
+      background: #f6f6f6;
+      .icon{
+        background: url(../img/icons/what_1.png) left center no-repeat;
+        @include background-size (3vw auto);
+      }
+    }
+    .blocks__2 {
+      margin-left: 1.5vw;
+      margin-right: 1.5vw;
+      background: #d8efee;
+      .icon{
+        background: url(../img/icons/what_2.png) left center no-repeat;
+        @include background-size (2vw auto);
+      }
+
+    }
+    .blocks__3 {
+      background: #f6f6f6;
+      .icon{
+        background: url(../img/icons/what_3.png) left center no-repeat;
+        @include background-size (1.5vw auto);
+      }
+    }
+  }
+  .innerWrapper {
+    opacity: 1;
+    background: none;
+  }
 }

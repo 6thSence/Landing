@@ -73,8 +73,17 @@ p {
     margin: 0;
 }
 
-footer {
-	position: relative; 
-	margin-top: -$footer-height;
-	height: $footer-height;
+//footer {
+//	position: relative;
+//	margin-top: -$footer-height;
+//	height: $footer-height;
+//}
+
+.innerWrapper {
+    width: 77vw;
+    height: 100%;
+    margin: 0 auto;
+    background: #ff6b7f;
+    opacity: 0.5;
 }
+

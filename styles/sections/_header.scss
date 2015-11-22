@@ -1,3 +1,118 @@
 .header {
+  font-family: proxima_nova_excn_ltsemibold;
+  font-weight: 500;
 @include block(url('../img/background/1.png')right center);
+  height: 111vmin;
+ &__nav,&__content,&__blocks{
+   width: 100%;
+   //opacity: 0.5;
+}
+  &__nav {
+    @include clearfix;
+    padding: 4vmin 1.9vw;
+    height: 15.5vmin;
+    //background: #00d6b2;
+    @include box-sizing;
+    .logo {
+      //width: 6vmin;
+      width: 12.5vw;
+    }
+    .header__list, .header__item {
+      display: inline-block;
+      text-decoration: none;
+      list-style: none;
+    }
+    .header__list {
+      padding-top: 0.8vmin;
+      //height: 6.4wmin;
+      float: right;
+      font-size: 1.8vmin;
+    }
+    .header__item {
+      height: 4vmin;
+      text-align: center;
+      padding-top: 1.4vmin;
+      @include border-radius(20px);
+      padding-left: 1.4vw ;
+      padding-right: 1.4vw;
+      cursor: pointer;
+      color: #ffffff;
+      &:hover {
+        @include transition(1s );
+        background: #e8ce4d;
+      }
+    }
+    .link {
+      display: inline-block;
+      text-decoration: none;
+      @include outline;
+    }
+  }
+  &__content {
+    @include box-sizing;
+    height: 50vmin;
+    //background: #550000;
+    color: #FFFFFF;
+    padding-top: 17.3vmin;
+    .header__title {
+      font-size: 5.4vmin;
+      margin-bottom: 3.3vmin;
+    }
+    .header__text {
+      font-family: proxima_nova_excn_ltlight;
+      font-size: 3.2vmin;
+      margin-bottom: 1vmin;
+    }
+  }
+  &__blocks {
+    color: #fff;
+    font-size: 2.8vmin;
+    height: 45.5vmin;
+    font-family: proxima_nova_excn_ltlight;
+    position: relative;
+    @include box-sizing;
+    .blocks__1,.blocks__2,.blocks__3 {
+      height: 100%;
+      width: 33.3%;
+      margin-right: -3px;
+      display: inline-block;
+      vertical-align: top;
+      @include box-sizing;
+      background: #1f2526;
+      opacity: 0.3;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+        @include transition(0.5s );
+        border-bottom: 0.8vmin solid #b8dad8;
+      }
+      padding: 17vmin 4vw ;
+    }
+    .blocks__text {
+      padding-left: 4vw;
+      height: 7vmin;
+    }
+    .blocks__1 {
+      .blocks__text {
+        background: #1f2526 url(../img/icons/header_1.png) left center no-repeat;
+        @include background-size (3vw);
+      }
+    }
+    .blocks__2 {
+      .blocks__text {
+        background: #1f2526 url(../img/icons/header_2.png) left center no-repeat;
+        @include background-size (2.9vw);
+      }
+    }
+    .blocks__3 {
+      .blocks__text {
+        background: #1f2526 url(../img/icons/header_3.png) left center no-repeat;
+        @include background-size (3vw);
+      }
+    }
+  }
+.innerWrapper {
+  opacity: 1;
+  background: none;
+}
 }

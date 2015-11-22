@@ -1,0 +1,24 @@
+@media screen and (max-width: 940px) {
+  .header__list {
+    font-size: 1.5vmin !important;
+  }
+  .header__content {
+    padding-top: 12vmin;
+  }
+  .header__item {
+    padding-top: 2vmin !important;
+  }
+  .whatwedo {
+    .blocks__1, .blocks__2, .blocks__3 {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    .blocks__title {
+      font-size: 1.9vmin;
+    }
+    .button {
+      font-size: 2vmin;
+      padding-top: 0.5vmin;
+    }
+  }
+}
