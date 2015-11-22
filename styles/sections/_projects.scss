@@ -1,4 +1,82 @@
 .projects {
   @include block(#f9f9f9);
   height: 120vmin;
+  &__content,&__images{
+    width: 100%;
+    @include box-sizing;
+    //opacity: 0.5;
+  }
+  &__content {
+    height: 37vmin;
+    //background: #fd3427;
+    padding-top: 14vmin;
+
+  }
+  &__title {
+    font-family: proxima_nova_excn_ltsemibold;
+    color: #555555;
+    font-size: 5.4vmin;
+  }
+  &__text {
+    font-family: proxima_nova_excn_ltlight;
+    font-size: 2.5vmin;
+    margin-bottom: 1vmin;
+    width: 35vw;
+  }
+  &__images {
+    .link{
+      @include outline;
+      text-decoration: none;
+      display: inline-block;
+      width: auto;
+      height: auto;
+      position: relative;
+      &__text {
+        position: absolute;
+        width: 40%; /* Ширина слоя в процентах */
+        height: 30%; /* Высота слоя в процентах */
+        left: 50%; /* Положение слоя от левого края */
+        top: 50%; /* Положение слоя от верхнего края */
+        margin-left: -20%; /* Отступ слева */
+        margin-top: -5%; /* Отступ сверху */
+        font-family: proxima_nova_excn_ltsemibold;
+        color: #555555;
+        text-align: center;
+        font-size: 4vmin;
+        display: none;
+        z-index: 0;
+        &:hover {
+          opacity: 0.6;
+          @include transition(0.5s);
+          display: inline-block;
+          font-size: 6vmin;
+          margin-left: -25%; /* Отступ слева */
+          margin-top: -10%; /* Отступ сверху */
+          color: #fff;
+        }
+      }
+    }
+    height: 70vmin;
+    //background: #00d6b2;
+    .projects__img {
+
+      width: 25vw;
+      margin-right: 1vmin;
+      cursor: pointer;
+      z-index: 999;
+      &:hover{
+        @include transition(0.5s);
+        opacity: 0.5;
+        & + .link__text {
+          display: block;
+        }
+
+      }
+    }
+  }
+
+  .innerWrapper {
+    opacity: 1;
+    background: none;
+  }
 }
