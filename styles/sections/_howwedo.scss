@@ -1,4 +1,136 @@
 .howwedo {
   @include block(url('../img/background/4.png') right center);
-height: 144vmin;
+height: 146vmin;
+  position: relative;
+  &__content,&__map {
+    @include box-sizing;
+  }
+  &__content{
+    width: 100%;
+
+    height: 38vmin;
+    padding-top: 14vmin;
+  }
+  &__map {
+    margin: 0 auto;
+    width: 50vw;
+    height: 93vmin;
+    @include clearfix;
+    .howwedo__1,.howwedo__2,.howwedo__3,.howwedo__4,.howwedo__5{
+      @include box-sizing;
+      padding-top: 27vmin !important;
+      height: 33vmin;
+      margin-bottom: 5vmin;
+      }
+    .howwedo__map_text {
+      font-family: proxima_nova_excn_ltlight;
+      font-size: 2.5vmin;
+      text-align: center;
+      margin-bottom: 1vmin;
+      width:15vw;
+      color: #ffffff;
+    }
+    .howwedo__left {
+      float: left;
+      height: 100%;
+      //background: #fd3427;
+      //opacity: 0.5;
+      width: 13vw;
+      .howwedo__1{
+        width: 100%;
+        background: url(../img/howwedo_1.png) top center no-repeat;
+        -webkit-background-size: 100%;
+        -moz-background-size:  100%;
+        -o-background-size:  100%;
+        background-size:  100%;
+        padding: 0px;
+      }
+      .howwedo__3 {
+        width: 100%;
+        background: url(../img/howwedo_3.png) top center no-repeat;
+        -webkit-background-size: 100%;
+        -moz-background-size:  100%;
+        -o-background-size:  100%;
+        background-size:  100%;
+        padding: 0px;
+
+      }
+    }
+    .howwedo__right {
+      float: right;
+      height: 100%;
+      //background: #fd3427;
+      //opacity: 0.5;
+      width: 13vw;
+      .howwedo__2{
+        padding-top: 22vmin;
+
+        width: 100%;
+        background: url(../img/howwedo_2.png) top center no-repeat;
+        -webkit-background-size: 100%;
+        -moz-background-size:  100%;
+        -o-background-size:  100%;
+        background-size:  100%;
+        padding: 0px;
+      }
+      .howwedo__4 {
+        width: 100%;
+        background: url(../img/howwedo_4.png) top center no-repeat;
+        -webkit-background-size: 100%;
+        -moz-background-size:  100%;
+        -o-background-size:  100%;
+        background-size:  100%;
+        padding: 0px;
+
+      }
+    }
+    .howwedo__map_bg{
+      margin-top: 3.5vmin;
+      width: 20vw;
+      height: 66vmin;
+      //height: 50vmin;
+      margin: 0 auto;
+      background: #00d6b2;
+      opacity: 0.5;
+      background: url(../img/howwedo_map.png) top center no-repeat;
+      -webkit-background-size: auto 100%;
+      -moz-background-size:auto  100%;
+      -o-background-size:auto  100%;
+      background-size:auto  100%;
+
+      //-webkit-background-size: 100%;
+      //-moz-background-size:  100%;
+      //-o-background-size:  100%;
+      //background-size:  100%;
+      padding: 0px;
+    }
+    .howwedo__5 {
+      width: 13vw;
+      margin: 0 auto;
+      //background: #009900;
+      //opacity: 0.5;
+      background: url(../img/howwedo_5.png) top center no-repeat;
+      -webkit-background-size: 100%;
+      -moz-background-size:  100%;
+      -o-background-size:  100%;
+      background-size:  100%;
+      padding: 0px;
+    }
+  }
+  &__title{
+    font-family: proxima_nova_excn_ltsemibold;
+    color: #ffffff;
+    font-size: 5.4vmin;
+  }
+  &__text{
+    font-family: proxima_nova_excn_ltlight;
+    font-size: 2.5vmin;
+    margin-bottom: 1vmin;
+    width: 35vw;
+    color: #ffffff;
+  }
+  .innerWrapper {
+    opacity: 1;
+    background: none;
+  }
 }

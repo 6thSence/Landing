@@ -770,6 +770,7 @@ p {
   font-size: 5.4vmin;
 }
 .whatwedo__content .whatwedo__text {
+  color: #555555;
   font-family: proxima_nova_excn_ltlight;
   font-size: 2.5vmin;
   margin-bottom: 1vmin;
@@ -917,6 +918,7 @@ p {
   font-size: 2.5vmin;
   margin-bottom: 1vmin;
   width: 35vw;
+  color: #555555;
 }
 .projects__images {
   height: 70vmin;
@@ -952,37 +954,19 @@ p {
   display: none;
   z-index: 0;
 }
-.projects__images .link__text:hover {
-  opacity: 0.6;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  display: inline-block;
-  font-size: 6vmin;
-  margin-left: -25%;
-  /* ╬ЄёЄєя ёыхтр */
-  margin-top: -10%;
-  /* ╬ЄёЄєя ётхЁїє */
-  color: #fff;
-}
 .projects__images .projects__img {
-  width: 25vw;
+  width: 24vw;
   margin-right: 1vmin;
   cursor: pointer;
   z-index: 999;
 }
 .projects__images .projects__img:hover {
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  opacity: 0.5;
-}
-.projects__images .projects__img:hover + .link__text {
-  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0.6;
 }
 .projects .innerWrapper {
   opacity: 1;
@@ -1002,7 +986,133 @@ p {
   -o-background-size: cover;
   background-size: cover;
   padding: 0px;
-  height: 144vmin;
+  height: 146vmin;
+  position: relative;
+}
+.howwedo__content, .howwedo__map {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.howwedo__content {
+  width: 100%;
+  height: 38vmin;
+  padding-top: 14vmin;
+}
+.howwedo__map {
+  margin: 0 auto;
+  width: 50vw;
+  height: 93vmin;
+}
+.howwedo__map:before, .howwedo__map:after {
+  content: "";
+  display: table;
+}
+.howwedo__map:after {
+  clear: both;
+}
+.howwedo__map .howwedo__1, .howwedo__map .howwedo__2, .howwedo__map .howwedo__3, .howwedo__map .howwedo__4, .howwedo__map .howwedo__5 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 27vmin !important;
+  height: 33vmin;
+  margin-bottom: 5vmin;
+}
+.howwedo__map .howwedo__map_text {
+  font-family: proxima_nova_excn_ltlight;
+  font-size: 2.5vmin;
+  text-align: center;
+  margin-bottom: 1vmin;
+  width: 15vw;
+  color: #ffffff;
+}
+.howwedo__map .howwedo__left {
+  float: left;
+  height: 100%;
+  width: 13vw;
+}
+.howwedo__map .howwedo__left .howwedo__1 {
+  width: 100%;
+  background: url(../img/howwedo_1.png) top center no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  padding: 0px;
+}
+.howwedo__map .howwedo__left .howwedo__3 {
+  width: 100%;
+  background: url(../img/howwedo_3.png) top center no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  padding: 0px;
+}
+.howwedo__map .howwedo__right {
+  float: right;
+  height: 100%;
+  width: 13vw;
+}
+.howwedo__map .howwedo__right .howwedo__2 {
+  padding-top: 22vmin;
+  width: 100%;
+  background: url(../img/howwedo_2.png) top center no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  padding: 0px;
+}
+.howwedo__map .howwedo__right .howwedo__4 {
+  width: 100%;
+  background: url(../img/howwedo_4.png) top center no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  padding: 0px;
+}
+.howwedo__map .howwedo__map_bg {
+  margin-top: 3.5vmin;
+  width: 20vw;
+  height: 66vmin;
+  margin: 0 auto;
+  background: #00d6b2;
+  opacity: 0.5;
+  background: url(../img/howwedo_map.png) top center no-repeat;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto  100%;
+  -o-background-size: auto  100%;
+  background-size: auto  100%;
+  padding: 0px;
+}
+.howwedo__map .howwedo__5 {
+  width: 13vw;
+  margin: 0 auto;
+  background: url(../img/howwedo_5.png) top center no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  padding: 0px;
+}
+.howwedo__title {
+  font-family: proxima_nova_excn_ltsemibold;
+  color: #ffffff;
+  font-size: 5.4vmin;
+}
+.howwedo__text {
+  font-family: proxima_nova_excn_ltlight;
+  font-size: 2.5vmin;
+  margin-bottom: 1vmin;
+  width: 35vw;
+  color: #ffffff;
+}
+.howwedo .innerWrapper {
+  opacity: 1;
+  background: none;
 }
 
 .team {
@@ -1018,7 +1128,175 @@ p {
   -o-background-size: cover;
   background-size: cover;
   padding: 0px;
-  height: 72vmin;
+  height: 80vmin;
+  overflow: hidden;
+  /* -------------- slider --------------- */
+  /*--------- slider content -------------*/
+}
+.team ul, .team li, .team a {
+  font-size: 2em;
+  color: #d4d4d4;
+  text-decoration: none;
+  list-style-type: none;
+}
+.team .slider {
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+}
+.team .slider__list--wrap {
+  display: inline-block;
+  width: 66vw;
+  height: 100%;
+  overflow: hidden;
+}
+.team .slider__list {
+  height: 100%;
+  width: 2000px;
+  position: relative;
+  left: 0;
+  -webkit-transition: left 1s;
+  -moz-transition: left 1s;
+  -o-transition: left 1s;
+  transition: left 1s;
+}
+.team .slider__list:after {
+  clear: both;
+}
+.team .slider__item {
+  height: 100%;
+  float: left;
+}
+.team .slider__contorols-button {
+  opacity: 0.8;
+  display: inline-block;
+  top: 50px;
+  width: 4vw;
+  background: #000;
+  -webkit-background-size: 3vmin;
+  -moz-background-size: 3vmin;
+  -o-background-size: 3vmin;
+  background-size: 3vmin;
+  -webkit-transition: all 0.5s easy;
+  -moz-transition: all 0.5s easy;
+  -ms-transition: all 0.5s easy;
+  -o-transition: all 0.5s easy;
+  transition: all 0.5s easy;
+}
+.team .slider__contorols-button_next {
+  background: url("../img/icons/bt_right.png") right center no-repeat;
+  display: inline-block;
+  height: 100%;
+}
+.team .slider__contorols-button_next:hover {
+  opacity: 0.5;
+}
+.team .slider__contorols-button_next:focus {
+  outline: none;
+}
+.team .slider__contorols-button_prev {
+  background: url("../img/icons/bt_left.png") left center no-repeat;
+  display: inline-block;
+  height: 100%;
+}
+.team .slider__contorols-button_prev:focus {
+  outline: none;
+}
+.team .slider__contorols-button_prev:hover {
+  opacity: 0.5;
+}
+.team .link {
+  display: block;
+  height: 4vmin;
+  width: 14vw;
+  margin: 3vmin auto;
+}
+.team .button {
+  width: 14vw;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: proxima_nova_excn_ltlight;
+  font-size: 2.5vmin;
+  height: 4vmin;
+  text-align: center;
+  padding-top: 0.3vmin;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding-left: 1.4vw;
+  padding-right: 1.4vw;
+  cursor: pointer;
+  color: #ffffff;
+  background: #e8ce4d;
+  opacity: 1;
+}
+.team .button:hover {
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 0.7;
+}
+.team .item_wrap {
+  width: 66vw;
+  height: 100%;
+}
+.team .innerWrapper {
+  opacity: 1;
+  background: none;
+}
+.team .slider__photo {
+  height: 34vmin;
+  width: 100%;
+  position: relative;
+  padding-top: 12vmin;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.team .photo_wrap {
+  display: block;
+  margin: 0 auto;
+  width: 22vmin;
+  height: 22vmin;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 5px solid #e3ecec;
+}
+.team .photo {
+  width: 100%;
+}
+.team .team__text {
+  font-family: proxima_nova_excn_ltlight;
+  font-size: 2vmin;
+  text-align: center;
+  color: #3d3d3d;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  min-height: 14vmin;
+  padding-top: 3vmin;
+  padding-bottom: 3vmin;
+  display: block;
+}
+.team .team__name {
+  display: block;
+  font-family: proxima_nova_cn_rgbold;
+  font-size: 3vmin;
+  text-align: center;
+  color: #3d3d3d;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .footerland {
@@ -1065,5 +1343,16 @@ p {
 
   .projects .link__text {
     font-size: 2vmin;
+  }
+
+  .howwedo__map_text {
+    margin-top: -10vmin;
+    margin-left: -2vw;
+    width: 20vw !important;
+    font-size: 2vmin;
+  }
+
+  .projects__content {
+    margin-bottom: 15vmin;
   }
 }

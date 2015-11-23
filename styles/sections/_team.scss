@@ -1,4 +1,182 @@
 .team {
   @include block(#f4f4f4);
-  height: 72vmin;
+  height: 80vmin;
+  overflow: hidden;
+  //.wrapper {
+  //  position: relative;
+  //  min-height: 100%;
+  //  height: auto !important;
+  //  height: 100%;
+  //
+  //  margin: 50px;
+  //}
+
+  ul,li,a {
+    font-size: 2em;
+    color: #d4d4d4;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  /* -------------- slider --------------- */
+  .slider {
+    height: 100%;
+    //position: absolute;
+    display: inline-block;
+    //margin-left: 200px;
+    //background: #009900;
+    //opacity: 0.5;
+    width: 100%;
+  }
+
+  .slider__list--wrap {
+    display: inline-block;
+    width: 66vw;
+    height: 100%;
+    overflow: hidden;
+    //background: #009900;
+    //opacity: 0.5;
+  }
+
+  .slider__list {
+    height: 100%;
+    width: 2000px;
+    position: relative;
+    left: 0;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -o-transition: left 1s;
+    transition: left 1s;
+  }
+
+  .slider__list:after {
+    clear: both;
+  }
+
+  .slider__item{
+    height: 100%;
+    float: left;
+  }
+
+  .slider__contorols-button {
+    opacity: 0.8;
+    display: inline-block;
+    //position: absolute;
+    top: 50px;
+    width: 4vw;
+    background: #000;
+    -webkit-background-size:3vmin;
+    -moz-background-size: 3vmin;
+    -o-background-size: 3vmin;
+    background-size: 3vmin;
+@include transition(all 0.5s easy);
+  }
+
+  .slider__contorols-button_next {
+    //right: -100px;
+    background: url("../img/icons/bt_right.png") right center no-repeat;
+    &:hover{
+      //background: #c4c4c4 url("../img/icons/bt_right.png") right center no-repeat;
+      opacity: 0.5;
+    }
+    display: inline-block;
+    height: 100%;
+    @include outline;
+  }
+
+  .slider__contorols-button_prev {
+    //left: -100px;
+    background: url("../img/icons/bt_left.png") left center no-repeat;
+    display: inline-block;
+    height: 100%;
+    @include outline;
+    &:hover{
+      //background: #c4c4c4 url("../img/icons/bt_left.png") left center no-repeat;
+      opacity: 0.5;
+    }
+  }
+  .link{
+    display: block;
+    //margin-left: 10vw ;
+    height: 4vmin;
+    width: 14vw ;
+    margin: 3vmin auto;
+
+  }
+  .button {
+    width: 14vw ;
+    @include box-sizing;
+    font-family: proxima_nova_excn_ltlight;
+    font-size: 2.5vmin;
+    height: 4vmin;
+    text-align: center;
+    padding-top: 0.3vmin;
+    @include border-radius(20px);
+    padding-left: 1.4vw ;
+    padding-right: 1.4vw;
+    cursor: pointer;
+    color: #ffffff;
+    background: #e8ce4d;
+    opacity: 1;
+    &:hover {
+      @include transition(1s );
+      opacity: 0.7;
+    }
+  }
+  .item_wrap {
+    width: 66vw;
+    height: 100%;
+  }
+
+  .innerWrapper {
+    opacity: 1;
+    background: none;
+  }
+
+  /*--------- slider content -------------*/
+  .slider__photo {
+    height: 34vmin;
+    width: 100%;
+    position: relative;
+    padding-top: 12vmin;
+    @include box-sizing;
+  }
+  .photo_wrap {
+    display: block;
+    margin: 0 auto;
+    width: 22vmin;
+    height: 22vmin;
+    //background: #fd3427;
+    //opacity: 0.5;
+    overflow: hidden;
+    @include border-radius(50%);
+    border: 5px solid #e3ecec;
+  }
+  .photo {
+    width: 100%;
+  }
+  .team__text{
+    font-family: proxima_nova_excn_ltlight;
+    font-size:2vmin;
+    text-align: center;
+    color: #3d3d3d;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    min-height: 14vmin;
+    padding-top: 3vmin;
+    padding-bottom: 3vmin;
+    display: block;
+  }
+  .team__name {
+    display: block;
+    font-family: proxima_nova_cn_rgbold;
+    font-size:3vmin;
+    text-align: center;
+    color: #3d3d3d;
+    width: 80%;
+    margin: 0 auto;
+    //height: 14vmin;
+  }
+
+
 }

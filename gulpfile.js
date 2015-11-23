@@ -101,8 +101,8 @@ gulp.task('sync', function() {
 gulp.task('watch', function(){
 	gulp.watch(paths.jade.location, ['jade']);
 	gulp.watch(paths.scss.location, ['compass']);
-	gulp.watch(paths.js.location, ['scripts']);
-	gulp.watch(paths.js.plugins, ['plugins']);
+	//gulp.watch(paths.js.location, ['scripts']);
+	//gulp.watch(paths.js.plugins, ['plugins']);
 	gulp.watch('bower.json',['jade']);
 	gulp.watch(paths.browserSync.watchPaths).on('change', browserSync.reload);
 })
