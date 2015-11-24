@@ -11,7 +11,7 @@
   //  margin: 50px;
   //}
 
-  ul,li,a {
+  ul, li, a {
     font-size: 2em;
     color: #d4d4d4;
     text-decoration: none;
@@ -49,55 +49,20 @@
     clear: both;
   }
 
-  .slider__item{
+  .slider__item {
     height: 100%;
     float: left;
   }
 
-  .slider__contorols-button {
-    opacity: 0.8;
-    display: inline-block;
-    //position: absolute;
-    top: 50px;
-    width: 4vw;
-    background: #000;
-    -webkit-background-size:3vmin;
-    -moz-background-size: 3vmin;
-    -o-background-size: 3vmin;
-    background-size: 3vmin;
-@include transition(all 0.5s easy);
-  }
-  //
-  //.slick-next {
-  //  background: url("../img/icons/bt_right.png") right center no-repeat;
-  //  &:hover{
-  //    opacity: 0.5;
-  //  }
-  //  //display: inline-block;
-  //  //height: 100%;
-  //  //@include outline;
-  //}
-
-  .slider__contorols-button_prev {
-    //left: -100px;
-    background: url("../img/icons/bt_left.png") left center no-repeat;
-    display: inline-block;
-    height: 100%;
-    @include outline;
-    &:hover{
-      //background: #c4c4c4 url("../img/icons/bt_left.png") left center no-repeat;
-      opacity: 0.5;
-    }
-  }
-  .link{
+  .link {
     display: block;
     height: 4vmin;
-    width: 20vw ;
+    width: 14vw;
     margin: 3vmin auto;
 
   }
   .button {
-    width: 100% ;
+    width: 100%;
     @include box-sizing;
     font-family: proxima_nova_excn_ltlight;
     font-size: 2.5vmin;
@@ -105,14 +70,14 @@
     text-align: center;
     padding-top: 0.3vmin;
     @include border-radius(20px);
-    padding-left: 1.4vw ;
+    padding-left: 1.4vw;
     padding-right: 1.4vw;
     cursor: pointer;
     color: #ffffff;
     background: #e8ce4d;
     opacity: 1;
     &:hover {
-      @include transition(1s );
+      @include transition(1s);
       opacity: 0.7;
     }
   }
@@ -149,9 +114,9 @@
   .photo {
     width: 100%;
   }
-  .team__text{
+  .team__text {
     font-family: proxima_nova_excn_ltlight;
-    font-size:2vmin;
+    font-size: 2vmin;
     text-align: center;
     color: #3d3d3d;
     width: 80%;
@@ -165,13 +130,11 @@
   .team__name {
     display: block;
     font-family: proxima_nova_cn_rgbold;
-    font-size:3vmin;
+    font-size: 3vmin;
     text-align: center;
     color: #3d3d3d;
     width: 80%;
     margin: 0 auto;
     //height: 14vmin;
   }
-
-
 }

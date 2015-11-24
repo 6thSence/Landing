@@ -1165,37 +1165,10 @@ p {
   height: 100%;
   float: left;
 }
-.team .slider__contorols-button {
-  opacity: 0.8;
-  display: inline-block;
-  top: 50px;
-  width: 4vw;
-  background: #000;
-  -webkit-background-size: 3vmin;
-  -moz-background-size: 3vmin;
-  -o-background-size: 3vmin;
-  background-size: 3vmin;
-  -webkit-transition: all 0.5s easy;
-  -moz-transition: all 0.5s easy;
-  -ms-transition: all 0.5s easy;
-  -o-transition: all 0.5s easy;
-  transition: all 0.5s easy;
-}
-.team .slider__contorols-button_prev {
-  background: url("../img/icons/bt_left.png") left center no-repeat;
-  display: inline-block;
-  height: 100%;
-}
-.team .slider__contorols-button_prev:focus {
-  outline: none;
-}
-.team .slider__contorols-button_prev:hover {
-  opacity: 0.5;
-}
 .team .link {
   display: block;
   height: 4vmin;
-  width: 20vw;
+  width: 14vw;
   margin: 3vmin auto;
 }
 .team .button {
@@ -1345,10 +1318,10 @@ p {
 }
 .footerland__soc_icons .soc_icons__list .so_icons__item .sos_icons_link_tw {
   background: url(../img/icons/tw.png) center center no-repeat;
-  background-size: 2vw 1.5vw;
-  -webkit-background-size: 2vw 1.5vw;
-  -o-background-size: 2vw 1.5vw;
-  -moz-background-size: 2vw 1.5vw;
+  background-size: auto 1.5vw;
+  -webkit-background-size: auto 1.5vw;
+  -o-background-size: auto 1.5vw;
+  -moz-background-size: auto 1.5vw;
 }
 .footerland__soc_icons .soc_icons__list .so_icons__item .sos_icons_link_in {
   background: url(../img/icons/in.png) center center no-repeat;
@@ -1439,5 +1412,9 @@ p {
   }
   .footerland__content .footerland__phone {
     font-size: 5vw;
+  }
+
+  .team .link {
+    width: 20vw;
   }
 }

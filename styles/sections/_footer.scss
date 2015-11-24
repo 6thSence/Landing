@@ -34,7 +34,7 @@
           }
           &_tw{
             background: url(../img/icons/tw.png) center center no-repeat;
-            @include background-size(2vw 1.5vw);
+            @include background-size(auto 1.5vw);
           }
           &_in{
             background: url(../img/icons/in.png) center center no-repeat;
