@@ -18,6 +18,11 @@
     list-style-type: none;
   }
   /* -------------- slider --------------- */
+
+  & * {
+    @include outline;
+
+  }
   .slider {
     height: 100%;
     //position: absolute;
@@ -28,18 +33,10 @@
     width: 100%;
   }
 
-  .slider__list--wrap {
-    display: inline-block;
-    width: 66vw;
-    height: 100%;
-    overflow: hidden;
-    //background: #009900;
-    //opacity: 0.5;
-  }
-
   .slider__list {
     height: 100%;
-    width: 2000px;
+    width: 66vw;
+    margin: 0 auto;
     position: relative;
     left: 0;
     -webkit-transition: left 1s;
@@ -70,18 +67,16 @@
     background-size: 3vmin;
 @include transition(all 0.5s easy);
   }
-
-  .slider__contorols-button_next {
-    //right: -100px;
-    background: url("../img/icons/bt_right.png") right center no-repeat;
-    &:hover{
-      //background: #c4c4c4 url("../img/icons/bt_right.png") right center no-repeat;
-      opacity: 0.5;
-    }
-    display: inline-block;
-    height: 100%;
-    @include outline;
-  }
+  //
+  //.slick-next {
+  //  background: url("../img/icons/bt_right.png") right center no-repeat;
+  //  &:hover{
+  //    opacity: 0.5;
+  //  }
+  //  //display: inline-block;
+  //  //height: 100%;
+  //  //@include outline;
+  //}
 
   .slider__contorols-button_prev {
     //left: -100px;
@@ -96,14 +91,13 @@
   }
   .link{
     display: block;
-    //margin-left: 10vw ;
     height: 4vmin;
-    width: 14vw ;
+    width: 20vw ;
     margin: 3vmin auto;
 
   }
   .button {
-    width: 14vw ;
+    width: 100% ;
     @include box-sizing;
     font-family: proxima_nova_excn_ltlight;
     font-size: 2.5vmin;
@@ -125,6 +119,7 @@
   .item_wrap {
     width: 66vw;
     height: 100%;
+    @include outline;
   }
 
   .innerWrapper {

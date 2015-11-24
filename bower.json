@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "jquery": "1.8",
-    "jquery-ui": "~1.11.4"
+    "slick-carousel": "~1.5.8"
   },
   "devDependencies": {
     "modernizr": "2.8.3"

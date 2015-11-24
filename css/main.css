@@ -1139,20 +1139,18 @@ p {
   text-decoration: none;
   list-style-type: none;
 }
+.team *:focus {
+  outline: none;
+}
 .team .slider {
   height: 100%;
   display: inline-block;
   width: 100%;
 }
-.team .slider__list--wrap {
-  display: inline-block;
-  width: 66vw;
-  height: 100%;
-  overflow: hidden;
-}
 .team .slider__list {
   height: 100%;
-  width: 2000px;
+  width: 66vw;
+  margin: 0 auto;
   position: relative;
   left: 0;
   -webkit-transition: left 1s;
@@ -1183,17 +1181,6 @@ p {
   -o-transition: all 0.5s easy;
   transition: all 0.5s easy;
 }
-.team .slider__contorols-button_next {
-  background: url("../img/icons/bt_right.png") right center no-repeat;
-  display: inline-block;
-  height: 100%;
-}
-.team .slider__contorols-button_next:hover {
-  opacity: 0.5;
-}
-.team .slider__contorols-button_next:focus {
-  outline: none;
-}
 .team .slider__contorols-button_prev {
   background: url("../img/icons/bt_left.png") left center no-repeat;
   display: inline-block;
@@ -1208,11 +1195,11 @@ p {
 .team .link {
   display: block;
   height: 4vmin;
-  width: 14vw;
+  width: 20vw;
   margin: 3vmin auto;
 }
 .team .button {
-  width: 14vw;
+  width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1245,6 +1232,9 @@ p {
 .team .item_wrap {
   width: 66vw;
   height: 100%;
+}
+.team .item_wrap:focus {
+  outline: none;
 }
 .team .innerWrapper {
   opacity: 1;
