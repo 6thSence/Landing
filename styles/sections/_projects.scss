@@ -1,6 +1,6 @@
 .projects {
   @include block(#f9f9f9);
-  height: 120vmin;
+  height: 125vmin;
   &__content,&__images{
     width: 100%;
     @include box-sizing;

@@ -40,6 +40,18 @@
 
   .projects__content {
     margin-bottom: 15vmin;
+  }
+  .footerland {
+    &__soc_icons {
+      width: 35vw;
+    }
 
+    &__content {
+      width: 40vw;
+      padding-left: 6vw;
+      .footerland__phone{
+        font-size: 5vw;
+      }
+    }
   }
 }

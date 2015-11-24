@@ -896,7 +896,7 @@ p {
   -o-background-size: cover;
   background-size: cover;
   padding: 0px;
-  height: 120vmin;
+  height: 125vmin;
 }
 .projects__content, .projects__images {
   width: 100%;
@@ -1303,7 +1303,7 @@ p {
   overflow: hidden;
   height: 100vmin;
   width: 100%;
-  background: url("../img/background/6.png") left center no-repeat;
+  background: url("../img/background/6.png") 0vw center no-repeat;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1313,6 +1313,90 @@ p {
   background-size: cover;
   padding: 0px;
   height: 77vmin;
+}
+.footerland__soc_icons, .footerland__content {
+  overflow: hidden;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.footerland__soc_icons {
+  width: 14vw;
+  display: inline-block;
+  position: relative;
+}
+.footerland__soc_icons .soc_icons__list {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  width: 3vw;
+  height: 27vmin;
+}
+.footerland__soc_icons .soc_icons__list .so_icons__item {
+  width: 100%;
+  height: 2vw;
+  margin-bottom: 3.3vmin;
+}
+.footerland__soc_icons .soc_icons__list .so_icons__item .sos_icons_link {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.footerland__soc_icons .soc_icons__list .so_icons__item .sos_icons_link_fb {
+  background: url(../img/icons/fb.png) center center no-repeat;
+  background-size: 2vw 1.5vw;
+  -webkit-background-size: 2vw 1.5vw;
+  -o-background-size: 2vw 1.5vw;
+  -moz-background-size: 2vw 1.5vw;
+}
+.footerland__soc_icons .soc_icons__list .so_icons__item .sos_icons_link_tw {
+  background: url(../img/icons/tw.png) center center no-repeat;
+  background-size: 2vw 1.5vw;
+  -webkit-background-size: 2vw 1.5vw;
+  -o-background-size: 2vw 1.5vw;
+  -moz-background-size: 2vw 1.5vw;
+}
+.footerland__soc_icons .soc_icons__list .so_icons__item .sos_icons_link_in {
+  background: url(../img/icons/in.png) center center no-repeat;
+  background-size: 2vw 1.5vw;
+  -webkit-background-size: 2vw 1.5vw;
+  -o-background-size: 2vw 1.5vw;
+  -moz-background-size: 2vw 1.5vw;
+}
+.footerland__soc_icons .soc_icons__list .so_icons__item .sos_icons_link_bh {
+  background: url(../img/icons/bh.png) center center no-repeat;
+  background-size: 2vw 1.2vw;
+  -webkit-background-size: 2vw 1.2vw;
+  -o-background-size: 2vw 1.2vw;
+  -moz-background-size: 2vw 1.2vw;
+}
+.footerland__content {
+  display: inline-block;
+  width: 60vw;
+  padding-top: 25.6vmin;
+  padding-left: 12.5vw;
+  font-family: proxima_nova_excn_ltsemibold;
+  color: #FFFFFF;
+}
+.footerland__content * {
+  margin-bottom: 1vmin;
+}
+.footerland__content .footerland__title {
+  font-size: 4.5vw;
+}
+.footerland__content .footerland__phone {
+  font-size: 8vw;
+}
+.footerland__content .footerland__adress {
+  font-size: 2vw;
+}
+.footerland .innerWrapper {
+  opacity: 1;
+  background: none;
 }
 
 /* --------- media queries --------- */
@@ -1354,5 +1438,16 @@ p {
 
   .projects__content {
     margin-bottom: 15vmin;
+  }
+
+  .footerland__soc_icons {
+    width: 35vw;
+  }
+  .footerland__content {
+    width: 40vw;
+    padding-left: 6vw;
+  }
+  .footerland__content .footerland__phone {
+    font-size: 5vw;
   }
 }

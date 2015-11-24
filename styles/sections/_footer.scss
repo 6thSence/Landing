@@ -1,4 +1,79 @@
 .footerland {
-  @include block(url('../img/background/6.png') left center);
+  @include block(url('../img/background/6.png') 0vw center);
   height: 77vmin;
+  &__soc_icons, &__content {
+    overflow: hidden;
+    height: 100%;
+    @include box-sizing;
+  }
+  &__soc_icons{
+    width: 14vw;
+    display: inline-block;
+    position: relative;
+    .soc_icons__list{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto auto;
+      width: 3vw;
+      height: 27vmin;
+      .so_icons__item {
+        width: 100%;
+        height: 2vw;
+        margin-bottom: 3.3vmin;
+
+        .sos_icons_link{
+          width: 100%;
+          height: 100%;
+          display: block;
+          &_fb{
+            background: url(../img/icons/fb.png) center center no-repeat;
+            @include background-size( 2vw 1.5vw);
+          }
+          &_tw{
+            background: url(../img/icons/tw.png) center center no-repeat;
+            @include background-size(2vw 1.5vw);
+          }
+          &_in{
+            background: url(../img/icons/in.png) center center no-repeat;
+            @include background-size(2vw 1.5vw);
+          }
+          &_bh{
+            background: url(../img/icons/bh.png) center center no-repeat;
+            @include background-size(2vw 1.2vw);
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: inline-block;
+    width: 60vw;
+    padding-top: 25.6vmin;
+    padding-left: 12.5vw;
+    font-family: proxima_nova_excn_ltsemibold;
+    color: #FFFFFF;
+    & * {
+      margin-bottom: 1vmin;
+    }
+    .footerland__title {
+      font-size: 4.5vw;
+    }
+    .footerland__phone{
+      font-size: 8vw;
+    }
+    .footerland__adress{
+      font-size: 2vw;
+
+    }
+
+  }
+
+  .innerWrapper {
+    opacity: 1;
+    background: none;
+  }
 }
