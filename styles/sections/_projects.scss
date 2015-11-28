@@ -1,6 +1,7 @@
 .projects {
   @include block(#f9f9f9);
-  height: 125vmin;
+  min-height: 125vmin;
+  padding-bottom: 10vmin;
   &__content,&__images{
     width: 100%;
     @include box-sizing;
@@ -24,7 +25,9 @@
     color: #555555;
 
   }
-  &__images {
+  &__list {
+    width: 100%;
+    display: inline-block;
     .link{
       @include outline;
       text-decoration: none;
@@ -56,12 +59,15 @@
         }
       }
     }
-    height: 70vmin;
-    //background: #00d6b2;
-    .projects__img {
 
-      width: 24vw;
-      margin-right: 1vmin;
+    height: 70vmin;
+    .projects__items {
+      display: inline-block;
+      width: 30%;
+    }
+    .projects__img {
+      width: 100%;
+      //margin-right: 1vmin;
       cursor: pointer;
       z-index: 999;
       &:hover{

@@ -71,10 +71,10 @@
     font-family: proxima_nova_excn_ltlight;
     position: relative;
     @include box-sizing;
-    .blocks__1,.blocks__2,.blocks__3 {
+    .blocks {
       height: 100%;
       width: 33.3%;
-      margin-right: -3px;
+      float: left;
       display: inline-block;
       vertical-align: top;
       @include box-sizing;

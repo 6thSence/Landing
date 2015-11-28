@@ -105,7 +105,7 @@
 
 @mixin block($color) {
   overflow: hidden;
-  height: 100vmin;
+  //height: 100vmin;
   width: 100%;
   background: $color no-repeat;
   @include box-sizing;
